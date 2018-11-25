@@ -13,7 +13,7 @@ docker build . -t ameba/codacy
 Run on a project
 
 ```
-docker run -it -v  $srcDir:/src ameba/codacy
+docker run -it -v $srcDir:/src ameba/codacy
 ```
 
 Regenerate docs (**TDB**):
