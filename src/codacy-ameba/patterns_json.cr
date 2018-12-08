@@ -34,7 +34,7 @@ module Codacy::Ameba
     end
 
     private def name(rule)
-      rule.name
+      Ameba.pattern_id(rule.name)
     end
 
     private def level(rule)

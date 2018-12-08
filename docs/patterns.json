@@ -3,172 +3,172 @@
   "version": "0.8.1",
   "patterns": [
     {
-      "patternId": "Layout/LineLength",
+      "patternId": "Layout_LineLength",
       "level": "Info",
       "parameters": []
     },
     {
-      "patternId": "Layout/TrailingBlankLines",
+      "patternId": "Layout_TrailingBlankLines",
       "level": "Info",
       "parameters": []
     },
     {
-      "patternId": "Layout/TrailingWhitespace",
+      "patternId": "Layout_TrailingWhitespace",
       "level": "Info",
       "parameters": []
     },
     {
-      "patternId": "Lint/ComparisonToBoolean",
+      "patternId": "Lint_ComparisonToBoolean",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/DebuggerStatement",
+      "patternId": "Lint_DebuggerStatement",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/EmptyEnsure",
+      "patternId": "Lint_EmptyEnsure",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/EmptyExpression",
+      "patternId": "Lint_EmptyExpression",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/HashDuplicatedKey",
+      "patternId": "Lint_HashDuplicatedKey",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/LiteralInCondition",
+      "patternId": "Lint_LiteralInCondition",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/LiteralInInterpolation",
+      "patternId": "Lint_LiteralInInterpolation",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/PercentArrays",
+      "patternId": "Lint_PercentArrays",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/RandZero",
+      "patternId": "Lint_RandZero",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/ShadowedArgument",
+      "patternId": "Lint_ShadowedArgument",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/ShadowedException",
+      "patternId": "Lint_ShadowedException",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/ShadowingOuterLocalVar",
+      "patternId": "Lint_ShadowingOuterLocalVar",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/Syntax",
+      "patternId": "Lint_Syntax",
       "level": "Error",
       "parameters": []
     },
     {
-      "patternId": "Lint/UnneededDisableDirective",
+      "patternId": "Lint_UnneededDisableDirective",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/UnreachableCode",
+      "patternId": "Lint_UnreachableCode",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/UnusedArgument",
+      "patternId": "Lint_UnusedArgument",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/UselessAssign",
+      "patternId": "Lint_UselessAssign",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Lint/UselessConditionInWhen",
+      "patternId": "Lint_UselessConditionInWhen",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Performance/AnyAfterFilter",
+      "patternId": "Performance_AnyAfterFilter",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Performance/FirstLastAfterFilter",
+      "patternId": "Performance_FirstLastAfterFilter",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Performance/SizeAfterFilter",
+      "patternId": "Performance_SizeAfterFilter",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Style/ConstantNames",
+      "patternId": "Style_ConstantNames",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Style/LargeNumbers",
+      "patternId": "Style_LargeNumbers",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Style/MethodNames",
+      "patternId": "Style_MethodNames",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Style/NegatedConditionsInUnless",
+      "patternId": "Style_NegatedConditionsInUnless",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Style/PredicateName",
+      "patternId": "Style_PredicateName",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Style/RedundantBegin",
+      "patternId": "Style_RedundantBegin",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Style/TypeNames",
+      "patternId": "Style_TypeNames",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Style/UnlessElse",
+      "patternId": "Style_UnlessElse",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Style/VariableNames",
+      "patternId": "Style_VariableNames",
       "level": "Warning",
       "parameters": []
     },
     {
-      "patternId": "Style/WhileTrue",
+      "patternId": "Style_WhileTrue",
       "level": "Warning",
       "parameters": []
     }

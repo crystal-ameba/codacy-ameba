@@ -5,7 +5,13 @@ require "./codacy-ameba/*"
 module Codacy::Ameba
   VERSION = "0.1.0"
 
-  def self.generate
+  extend self
+
+  def pattern_id(name)
+    name.gsub("/", "_")
+  end
+
+  def generate
     rules = ::Ameba::Config.load.rules
 
     Markdown.new.generate
