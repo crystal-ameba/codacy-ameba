@@ -16,11 +16,11 @@ Run on a project
 docker run -it -v $srcDir:/src ameba/codacy
 ```
 
-Regenerate docs (**TDB**):
+Regenerate `docs` folder:
 
 ```
 shards install
-crystal src/generate.cr
+crystal src/codacy-ameba.cr
 ```
 
 ## What is Codacy?
