@@ -11,4 +11,4 @@ license: MIT
 dependencies:
   ameba:
     github: veelenga/ameba
-    version: 0.8.1
+    branch: master

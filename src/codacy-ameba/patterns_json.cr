@@ -1,34 +1,34 @@
 module Codacy::Ameba
-  record Parameter,
-    name : String,
-    default : String do
-    def to_json(json : JSON::Builder)
-      json.object do
-        json.field "name", name
-        json.field "default", default
-      end
-    end
-  end
-
-  record Pattern,
-    id : String,
-    level : String,
-    category : String,
-    parameters : Array(Parameter) do
-    def to_json(json : JSON::Builder)
-      json.object do
-        json.field "patternId", id
-        json.field "level", level
-        json.field "parameters", parameters
-      end
-    end
-  end
-
   class PatternsJSON
+    record Parameter,
+      name : String,
+      default : String do
+      def to_json(json : JSON::Builder)
+        json.object do
+          json.field "name", name
+          json.field "default", default
+        end
+      end
+    end
+
+    record Pattern,
+      id : String,
+      level : String,
+      category : String,
+      parameters : Array(Parameter) do
+      def to_json(json : JSON::Builder)
+        json.object do
+          json.field "patternId", id
+          json.field "level", level
+          json.field "parameters", parameters
+        end
+      end
+    end
+
     @patterns = [] of Pattern
 
-    def initialize(@filename = "docs/patterns.json")
-      @patterns = ::Ameba::Config.load.rules.map do |rule|
+    def initialize(rules, @filename = "docs/patterns.json")
+      @patterns = rules.map do |rule|
         Pattern.new name(rule), level(rule), category(rule), [] of Parameter
       end
     end

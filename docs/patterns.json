@@ -88,6 +88,11 @@
       "parameters": []
     },
     {
+      "patternId": "Lint/UnreachableCode",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
       "patternId": "Lint/UnusedArgument",
       "level": "Warning",
       "parameters": []
