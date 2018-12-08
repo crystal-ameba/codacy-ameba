@@ -14,7 +14,7 @@ module Codacy::Ameba
   def generate
     rules = ::Ameba::Config.load.rules
 
-    Markdown.new.generate
+    Markdown.new(rules).generate
     PatternsJSON.new(rules).generate
     DescriptionJSON.new(rules).generate
   end
