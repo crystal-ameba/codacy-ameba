@@ -20,7 +20,7 @@ Regenerate `docs` folder:
 
 ```
 shards install
-crystal src/codacy-ameba.cr
+crystal src/generate.cr
 ```
 
 ## What is Codacy?
