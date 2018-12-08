@@ -1,0 +1,171 @@
+{
+  "name": "Ameba",
+  "version": "0.8.1",
+  "patterns": [
+    {
+      "patternId": "Layout/LineLength",
+      "level": "Info",
+      "parameters": []
+    },
+    {
+      "patternId": "Layout/TrailingBlankLines",
+      "level": "Info",
+      "parameters": []
+    },
+    {
+      "patternId": "Layout/TrailingWhitespace",
+      "level": "Info",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/ComparisonToBoolean",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/DebuggerStatement",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/EmptyEnsure",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/EmptyExpression",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/HashDuplicatedKey",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/LiteralInCondition",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/LiteralInInterpolation",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/PercentArrays",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/RandZero",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/ShadowedArgument",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/ShadowedException",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/ShadowingOuterLocalVar",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/Syntax",
+      "level": "Error",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/UnneededDisableDirective",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/UnusedArgument",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/UselessAssign",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Lint/UselessConditionInWhen",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Performance/AnyAfterFilter",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Performance/FirstLastAfterFilter",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Performance/SizeAfterFilter",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Style/ConstantNames",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Style/LargeNumbers",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Style/MethodNames",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Style/NegatedConditionsInUnless",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Style/PredicateName",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Style/RedundantBegin",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Style/TypeNames",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Style/UnlessElse",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Style/VariableNames",
+      "level": "Warning",
+      "parameters": []
+    },
+    {
+      "patternId": "Style/WhileTrue",
+      "level": "Warning",
+      "parameters": []
+    }
+  ]
+}
