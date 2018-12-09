@@ -1,5 +1,7 @@
 # Codacy Ameba
 
+UNDER CONSTRUCTION :construction:
+
 Tooling & Docker Definition for running [Ameba](https://github.com/veelenga/ameba) on [Codacy](https://www.codacy.com/)
 
 ## Usage
