@@ -6,7 +6,7 @@ ADD . /tmp/build
 RUN shards build --production
 
 # Copy build product to runtime
-RUN mkdir -p /opt/app && cp /tmp/build/bin/ameba /opt/app
+RUN mkdir -p /opt/app && cp /tmp/build/bin/codacy-ameba /opt/app
 
 # Cleanup build source
 RUN rm -rf /tmp/build
@@ -16,4 +16,4 @@ RUN adduser --uid 2004 --disabled-password --gecos ",,," docker
 RUN ["chown", "-R", "docker:docker", "/opt/app"]
 USER docker
 
-ENTRYPOINT ["/opt/app/ameba", "/src"]
+ENTRYPOINT ["/opt/app/codacy-ameba"]

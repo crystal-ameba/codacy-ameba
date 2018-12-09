@@ -8,6 +8,10 @@ crystal: 0.27.0
 
 license: MIT
 
+targets:
+  codacy-ameba:
+    main: src/codacy-ameba.cr
+
 dependencies:
   ameba:
     github: veelenga/ameba
