@@ -7,7 +7,7 @@ module Codacy::Ameba
 
     def generate
       @rules.each do |rule|
-        filename = "#{@directory}/#{Ameba.pattern_id(rule.name)}.md"
+        filename = "#{@directory}/#{Ameba.generate_pattern_id(rule.name)}.md"
         File.write(filename, rule.class.parsed_doc)
       end
     end

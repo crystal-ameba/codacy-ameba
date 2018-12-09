@@ -1,16 +1,9 @@
 require "ameba"
-require "json"
-require "./codacy-ameba/*"
+require "./codacy-ameba/util.cr"
 require "./codacy-ameba/generate/*"
 
 module Codacy::Ameba
-  extend self
-
-  def pattern_id(name)
-    name.gsub("/", "_")
-  end
-
-  def generate
+  def self.generate
     rules = ::Ameba::Config.load.rules
 
     Markdown.new(rules).generate

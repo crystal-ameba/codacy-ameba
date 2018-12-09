@@ -32,7 +32,7 @@ module Codacy::Ameba
 
     def initialize(rules, @filename = "docs/description/description.json")
       @descriptions = rules.map do |rule|
-        Description.new Ameba.pattern_id(rule.name), rule.description, rule.description, 5, [] of Parameter
+        Description.new Ameba.generate_pattern_id(rule.name), rule.description, rule.description, 5, [] of Parameter
       end
     end
 

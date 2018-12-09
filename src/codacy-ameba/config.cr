@@ -10,7 +10,7 @@ module Codacy::Ameba
 
   struct Pattern
     JSON.mapping(
-      patternId: String,
+      id: {type: String, key: "patternId"},
       parameters: Array(Parameter)
     )
   end
@@ -24,12 +24,15 @@ module Codacy::Ameba
 
   struct Config
     JSON.mapping(
-      files: Array(String),
-      tools: Array(Tool)
+      files: {type: Array(String), default: [] of String},
+      tools: {type: Array(Tool), default: [] of Tool}
     )
 
-    def load(path = "/src/.codacy.json")
-      Config.from_json(path)
+    def self.load(base_dir, filename = ".codacy.json")
+      data = File.read("#{base_dir}/#{filename}")
+      Config.from_json(data)
+    rescue
+      Config.from_json("{}")
     end
   end
 end
