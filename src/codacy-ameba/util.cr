@@ -1,4 +1,6 @@
 module Codacy::Ameba
+  TOOL_NAME = "ameba"
+
   extend self
 
   def generate_pattern_id(rule_name)

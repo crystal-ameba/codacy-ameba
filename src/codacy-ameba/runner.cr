@@ -28,7 +28,7 @@ module Codacy::Ameba
       return if tools.nil?
 
       patterns = tools
-        .find { |tool| tool.name == "Ameba" }
+        .find { |tool| tool.name == TOOL_NAME }
         .try &.patterns
 
       if patterns

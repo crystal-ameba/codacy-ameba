@@ -1,5 +1,7 @@
 FROM crystallang/crystal:0.27.0
 
+ADD docs /docs
+
 WORKDIR /tmp/build
 ADD . /tmp/build
 
@@ -13,6 +15,7 @@ RUN rm -rf /tmp/build
 
 # Configure user
 RUN adduser --uid 2004 --disabled-password --gecos ",,," docker
+RUN ["chown", "-R", "docker:docker", "/docs"]
 RUN ["chown", "-R", "docker:docker", "/opt/app"]
 USER docker
 

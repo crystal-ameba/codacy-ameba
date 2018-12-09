@@ -20,6 +20,7 @@ module Codacy::Ameba
         json.object do
           json.field "patternId", id
           json.field "level", level
+          json.field "category", category
           json.field "parameters", parameters
         end
       end
@@ -71,7 +72,7 @@ module Codacy::Ameba
 
     def to_json(json : JSON::Builder)
       json.object do
-        json.field "name", "Ameba"
+        json.field "name", TOOL_NAME
         json.field "version", ::Ameba::VERSION
         json.field "patterns", @patterns
       end
