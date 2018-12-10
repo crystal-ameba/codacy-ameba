@@ -1,7 +1,5 @@
 # Codacy Ameba
 
-UNDER CONSTRUCTION :construction:
-
 Tooling & Docker Definition for running [Ameba](https://github.com/veelenga/ameba) on [Codacy](https://www.codacy.com/)
 
 ## Usage
@@ -23,6 +21,20 @@ Regenerate `docs` folder:
 ```
 shards install
 crystal src/generate.cr
+```
+
+## Testing
+
+Run regular unit tests: `crystal spec`
+
+Run [Codacy Plugin Tests](https://github.com/codacy/codacy-plugins-test) against the docker image:
+
+```sh
+# In codacy-ameba
+docker build . -t ameba/codacy:latest
+
+# in codacy-plugins-test
+sbt "run-main codacy.plugins.DockerTest all ameba/codacy:latest"
 ```
 
 ## What is Codacy?

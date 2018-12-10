@@ -14,6 +14,8 @@ module Codacy::Ameba
       configure_formatter(ameba_config)
 
       ::Ameba.run(ameba_config)
+    rescue
+      false
     end
 
     private def configure_files(config, files)

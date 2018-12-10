@@ -1,2 +1,3 @@
 require "spec"
-require "../src/codacy-ameba"
+require "ameba"
+require "../src/codacy-ameba/*"
