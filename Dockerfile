@@ -1,18 +1,14 @@
-FROM crystallang/crystal:0.27.0
-
-ADD docs /docs
-
+FROM alpine:3.8 as builder
+RUN apk add crystal shards openssl-dev yaml-dev musl-dev make
 WORKDIR /tmp/build
 ADD . /tmp/build
-
 RUN shards build --production
 
-# Copy build product to runtime
-RUN mkdir -p /opt/app && cp /tmp/build/bin/codacy-ameba /opt/app
-
-# Cleanup build source
-RUN rm -rf /tmp/build
-
+FROM alpine:3.8
+RUN apk add --update openssl yaml pcre gc libevent libgcc
+ADD docs /docs
+RUN mkdir -p /opt/app
+COPY --from=builder /tmp/build/bin/codacy-ameba /opt/app
 # Configure user
 RUN adduser --uid 2004 --disabled-password --gecos ",,," docker
 RUN ["chown", "-R", "docker:docker", "/docs"]
