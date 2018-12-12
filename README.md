@@ -1,5 +1,7 @@
 # Codacy Ameba
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c7c17501a62e4e8cb66b75eb67354fcc)](https://app.codacy.com/app/veelenga/codacy-ameba?utm_source=github.com&utm_medium=referral&utm_content=veelenga/codacy-ameba&utm_campaign=Badge_Grade_Dashboard)
+
 Tooling & Docker Definition for running [Ameba](https://github.com/veelenga/ameba) on [Codacy](https://www.codacy.com/)
 
 ## Usage
