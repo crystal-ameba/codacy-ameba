@@ -37,6 +37,8 @@ module Codacy::Ameba
         selected_rule_names = patterns.map { |pattern| Ameba.get_rule_name(pattern.id) }
         config.rules.map! { |r| r.enabled = false; r }
         config.update_rules(selected_rule_names, enabled: true)
+      else
+        config.rules.map! { |r| r.enabled = true; r }
       end
     end
 

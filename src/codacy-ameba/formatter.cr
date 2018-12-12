@@ -22,7 +22,7 @@ module Codacy::Ameba
     end
 
     private def remove_base_dir(path)
-      path.gsub(/^#{@base_dir}/, "")
+      path.gsub(/^#{@base_dir}/, "").gsub(/^\//, "")
     end
   end
 end
