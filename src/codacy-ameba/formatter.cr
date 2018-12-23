@@ -18,7 +18,7 @@ module Codacy::Ameba
         message:   issue.message,
         patternId: issue.rule.name.gsub("/", "_"),
         line:      location.line_number,
-      }.to_pretty_json
+      }.to_json
     end
 
     private def remove_base_dir(path)

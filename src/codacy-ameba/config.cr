@@ -11,7 +11,7 @@ module Codacy::Ameba
   struct Pattern
     JSON.mapping(
       id: {type: String, key: "patternId"},
-      parameters: Array(Parameter)
+      parameters: Array(Parameter)?
     )
   end
 

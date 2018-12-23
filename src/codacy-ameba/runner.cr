@@ -22,7 +22,9 @@ module Codacy::Ameba
       if files.nil? || files.empty?
         config.files = default_files
       else
-        config.files = files.map { |f| "#{dir}/#{f}" }
+        config.files = files
+          .select { |f| f =~ /.cr$/ }
+          .map { |f| "#{dir}/#{f}" }
       end
     end
 

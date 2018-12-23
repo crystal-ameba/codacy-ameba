@@ -41,9 +41,10 @@ module Codacy::Ameba
 
       pattern = tool.patterns.first
       pattern.id.should eq "latedef"
-      pattern.parameters.size.should eq 1
 
-      parameter = pattern.parameters.first
+      parameters = pattern.parameters || [] of Parameter
+      parameters.size.should eq 1
+      parameter = parameters.first
       parameter.name.should eq "latedef"
       parameter.value.should eq "vars"
     end
