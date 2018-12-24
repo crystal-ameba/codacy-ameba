@@ -105,13 +105,6 @@
     "parameters": []
   },
   {
-    "patternId": "Lint_Syntax",
-    "title": "Reports invalid Crystal syntax.",
-    "description": "Reports invalid Crystal syntax.",
-    "timeToFix": 5,
-    "parameters": []
-  },
-  {
     "patternId": "Lint_UnneededDisableDirective",
     "title": "Reports unneeded disable directives in comments",
     "description": "Reports unneeded disable directives in comments",

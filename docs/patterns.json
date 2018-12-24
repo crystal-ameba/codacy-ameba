@@ -93,12 +93,6 @@
       "parameters": []
     },
     {
-      "patternId": "Lint_Syntax",
-      "level": "Error",
-      "category": "ErrorProne",
-      "parameters": []
-    },
-    {
       "patternId": "Lint_UnneededDisableDirective",
       "level": "Warning",
       "category": "ErrorProne",
