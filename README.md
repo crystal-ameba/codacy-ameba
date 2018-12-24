@@ -5,6 +5,8 @@
 
 Tooling & Docker Definition for running [Ameba](https://github.com/veelenga/ameba) on [Codacy](https://www.codacy.com/)
 
+*Implements the [Tool Developer Guide](https://support.codacy.com/hc/en-us/articles/207994725-Tool-Developer-Guide)*
+
 ## Usage
 
 Build the docker image
@@ -39,6 +41,11 @@ docker build . -t ameba/codacy:latest
 # in codacy-plugins-test
 sbt "run-main codacy.plugins.DockerTest all ameba/codacy:latest"
 ```
+
+## Bump versions
+
+- Crystal version should be updated in `Dockerfile` file (version of the image).
+- Ameba version should be updated in `shard.yml`/`shard.lock` files.
 
 ## What is Codacy
 
