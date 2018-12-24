@@ -5,3 +5,7 @@ foo = 1
 if foo == true
   puts "foo is true!"
 end
+
+if foo
+  puts "foo is truthy"
+end
