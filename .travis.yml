@@ -3,4 +3,4 @@ install:
   - shards install
 script:
   - crystal spec
-  - bin/ameba src/* spec/*
+  - bin/ameba src spec --all
