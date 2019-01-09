@@ -39,7 +39,7 @@ Run [Codacy Plugin Tests](https://github.com/codacy/codacy-plugins-test) against
 docker build . -t ameba/codacy:latest
 
 # in codacy-plugins-test
-sbt "run-main codacy.plugins.DockerTest all ameba/codacy:latest"
+sbt "runMain codacy.plugins.DockerTest all ameba/codacy:latest"
 ```
 
 ## Bump versions

@@ -203,6 +203,13 @@
     "parameters": []
   },
   {
+    "patternId": "Style_RedundantReturn",
+    "title": "Reports redundant return expressions",
+    "description": "Reports redundant return expressions",
+    "timeToFix": 5,
+    "parameters": []
+  },
+  {
     "patternId": "Style_TypeNames",
     "title": "Enforces type names in camelcase manner",
     "description": "Enforces type names in camelcase manner",

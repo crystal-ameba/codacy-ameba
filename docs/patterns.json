@@ -1,6 +1,6 @@
 {
   "name": "ameba",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "patterns": [
     {
       "patternId": "Layout_LineLength",
@@ -172,6 +172,12 @@
     },
     {
       "patternId": "Style_RedundantBegin",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "parameters": []
+    },
+    {
+      "patternId": "Style_RedundantReturn",
       "level": "Warning",
       "category": "CodeStyle",
       "parameters": []
