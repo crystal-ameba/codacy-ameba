@@ -7,6 +7,8 @@ Tooling & Docker Definition for running [Ameba](https://github.com/veelenga/ameb
 
 *Implements the [Tool Developer Guide](https://support.codacy.com/hc/en-us/articles/207994725-Tool-Developer-Guide)*
 
+**[A fork](https://github.com/codacy/codacy-ameba) of this repo is officially supported by Codacy**
+
 ## Usage
 
 Build the docker image
